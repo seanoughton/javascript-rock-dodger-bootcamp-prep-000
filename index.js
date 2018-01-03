@@ -127,16 +127,12 @@ function endGame() {
 
   clearInterval(gameInterval)
   rockList = document.querySelectorAll('.rock')
-  sampleList = document.getElementsByClassName('rock')
-  while(sampleList[0]){
-      sampleList[0].parentNode.removeChild(sampleList[0])
-  }
   
-  /**
+
   for (i=0;i<rockList.length;i++){
     //console.log(rockList[i])
     //rockList[i].remove()
-  }**/
+
 
 
   window.removeEventListener('keydown', moveDodger)

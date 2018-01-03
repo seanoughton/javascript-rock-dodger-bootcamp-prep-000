@@ -130,7 +130,6 @@ function endGame() {
   
 
   for (i=0;i<rockList.length;i++){
-    //console.log(rockList[i])
     rockList[i].remove()
   }
 

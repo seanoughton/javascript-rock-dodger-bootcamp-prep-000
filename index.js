@@ -153,11 +153,6 @@ function moveDodgerLeft() {
    
      function step(){
       if (left > 0) {DODGER.style.left = `${left -= 4}px`}
-      
-      /*
-      if (left > 0){
-        window.requestAnimationFrame(step)
-      }*/
     }
 
     window.requestAnimationFrame(step)

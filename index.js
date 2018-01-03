@@ -43,21 +43,6 @@ function checkCollision(rock) {
         ( (rockLeftEdge < dodgerLeftEdge) && (rockRightEdge>dodgerLeftEdge)/** rock hits dodger on left **/) ||
         ( (rockLeftEdge>dodgerLeftEdge) && (rockRightEdge<dodgerRightEdge)  /** rock hits dodger center**/) ||
         ( (rockLeftEdge<dodgerRightEdge) &&(rockRightEdge>dodgerRightEdge) /** rock hits dodger on right**/)
-    /**
-
-               * Think about it -- what's happening here?
-               * There's been a collision if one of three things is true:
-               * 1. The rock's left edge is < the DODGER's left edge,
-               *    and the rock's right edge is > the DODGER's left edge; *** rock hits dodger on left
-
-               * 2. The rock's left edge is > the DODGER's left edge,
-               *    and the rock's right edge is < the DODGER's right edge; ** rock hits dodger somewhere in the center
-               * 3. The rock's left edge is < the DODGER's right edge,
-               *    and the rock's right edge is > the DODGER's right edge*** rock hits dodger on the right
-               */
-
-
-
                ) {
       return true
     }

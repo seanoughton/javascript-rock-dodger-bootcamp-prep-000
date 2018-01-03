@@ -126,7 +126,6 @@ function createRock(x) {
 function endGame() {
 
   clearInterval(gameInterval)
-  //node.removeChild(rock)
   rockList = document.querySelectorAll('.rock')
   sampleList = document.getElementsByClassName('rock')
   while(sampleList[0]){
